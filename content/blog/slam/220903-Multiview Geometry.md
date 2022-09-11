@@ -9,7 +9,7 @@ draft: false
 
 ### Bundle Adjustment
 
-![Untitled](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled.png)
+![](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled.png)
 
 - **Unknown**
     - `Position of 3D points` and `each camera’s relative pose` ($6n+3m$ DoF)
