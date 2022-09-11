@@ -1,7 +1,7 @@
 ---
 title: "Linux 초기 PC 셋팅"
 date: 2020-07-27 15:56:28 -0400
-categories: linux
+category: linux
 ---
 
 #### 터미네이터 설치 방법
