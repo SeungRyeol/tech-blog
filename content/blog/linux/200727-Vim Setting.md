@@ -2,6 +2,7 @@
 title: "Vim Setting"
 date: 2020-07-27 16:01:00 -0400
 category: linux
+draft: false
 ---
 
 #### Vim Plugin 설치

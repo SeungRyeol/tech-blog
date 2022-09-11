@@ -2,6 +2,7 @@
 title: "Linux Mint Setting"
 date: 2020-07-27 15:59:00 -0400
 category: linux
+draft: false
 ---
 
 #### Linux Mint 한글 설정
