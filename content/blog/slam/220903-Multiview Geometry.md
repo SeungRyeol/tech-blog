@@ -9,7 +9,7 @@ draft: false
 
 ### Bundle Adjustment
 
-![Untitled](/assets/images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled.png)
+![Untitled](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled.png)
 
 - **Unknown**
     - `Position of 3D points` and `each camera’s relative pose` ($6n+3m$ DoF)
@@ -57,13 +57,13 @@ draft: false
         
         ⇒ Match features and find good matches (which has enough inliers)
         
-        ![Untitled](/assets/images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%201.png)
+        ![Untitled](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%201.png)
         
     2. Initialize cameras ($R, t, f, ...$)
     3. Initialize 3D points and build a visibility graph
     4. Optimize camera pose and 3D points together (BA)
         
-        ![Untitled](/assets/images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%202.png)
+        ![Untitled](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%202.png)
         
 
 - **SfM (Incremental)**
@@ -81,16 +81,16 @@ draft: false
     7. Reconstruct newly observed 3D points (triangulation)
     8. Optimize camera pose and 3D points together (BA)
     
-    ![Untitled](/assets/images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%203.png)
+    ![Untitled](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%203.png)
     
 
 ### Visual SLAM
 
 - `Feature-based Method` vs `Direct Method`
     
-    ![Untitled](/assets/images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%204.png)
+    ![Untitled](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%204.png)
     
-    ![Untitled](/assets/images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%205.png)
+    ![Untitled](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%205.png)
     
 
 ### Visual Odometry
@@ -122,7 +122,7 @@ draft: false
 - **Feature-based Monocular Visual Odometry**
     - `Two-view Motion Estimation`
         
-        ![Untitled](/assets/images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%206.png)
+        ![Untitled](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%206.png)
         
         1. Find 2D-2D feature correspondence
             - Feature
@@ -145,7 +145,7 @@ draft: false
             - Scale-from-ground with asymmetric kernels [Choi13_URAI]
     - `PnP Pose Estimation`
         
-        ![Untitled](/assets/images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%207.png)
+        ![Untitled](./images/Multi-view%20Geometry%204c25e6aa341742a197980bf0d7efe0c1/Untitled%207.png)
         
         1. Find 2D-2D feature correspondence
             - Feature

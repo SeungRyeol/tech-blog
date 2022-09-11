@@ -44,7 +44,7 @@ draft: false
 
 - **Key idea**: Sliding window
 
-    ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled.png)
+    ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled.png)
     
 - **Properties**
     - 불변성
@@ -52,12 +52,12 @@ draft: false
         - rotation
         - intensity shift ($I$→$I+b$)
         
-        ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%201.png)
+        ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%201.png)
         
     - 가변성
         - **image scaling**
             
-            ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%202.png)
+            ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%202.png)
             
 
 ### SIFT (Scale-Invariant Feature Transform; 1999)
@@ -66,21 +66,21 @@ draft: false
 - **Part #1) Feature point detection**
     1. DOG scale-space에서 local extrema (minima and maxima) 찾기
         
-        ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%203.png)
+        ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%203.png)
         
     2. sub-pixel level에서 3D quadratic function를 사용해 위치를 정확하게 로컬화
     3. 낮은 대비(low contrast)를 갖는 후보군 제거, $|D(\mathbf{x})|<\tau$
     4. edges위에 있는 후보군 제거,
     $\frac{\operatorname{trace}(H)^2}{\operatorname{det}(H)}<\frac{(r+1)^2}{r} \text { where } H=\left[\begin{array}{ll}D_{x x} & D_{x y} \\D_{x y} & D_{y y}\end{array}\right]$
     
-    ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%204.png)
+    ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%204.png)
     
 
 ### FAST (Features from Accelerated Segment Test; 2006)
 
 - **Key idea**: $N$개 또는 그 이상 픽셀들의 연속적인 호(arc)
     
-    ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%205.png)
+    ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%205.png)
     
     - 이번 patch는 corner인가?
         - segment가 $p+t$보다 밝은가?
@@ -98,7 +98,7 @@ draft: false
 - **Key idea**: Deep neural network
     - DET (feature detector) + ORI (orientation estimator) + DESC (feature descriptor)
     
-    ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%206.png)
+    ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%206.png)
 
 </div>
 </details>
@@ -111,7 +111,7 @@ draft: false
 
 - **Part #2) Orientation assignment**
     
-    ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%207.png)
+    ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%207.png)
     
     1. 각 patch gradient의 magnitude와 orientation 유도
         
@@ -123,14 +123,14 @@ draft: false
         
 - **Part #3) Feature descriptor extraction**
     
-    ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%208.png)
+    ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%208.png)
     
     - 각 patch (16x16 pixels)에서 4x4 gradient histogram (8 bins) 사용
         - Gaussian-weighted magnitude를 다시 사용
         - 할당된 feature orientation에 대한 상대 각도 사용
     - histogram을 128 차원 벡터로 인코딩
     
-    ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%209.png)
+    ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%209.png)
     
 
 ### BRIEF (Binary Robust Independent Elementary Features; 2010)
@@ -139,7 +139,7 @@ draft: false
     - stability와 repeatability을 위한 smoothing 적용
     - Path size: 31 x 31 pixels
     
-    ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%2010.png)
+    ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%2010.png)
     
 - **Versions**: The number of tests
     - BRIEF-32, BRIEF-64, BRIEF-128, BRIEF-256 ...
@@ -159,7 +159,7 @@ draft: false
         - known orientation에 대한 BRIEF descriptors 추출
         - greedy search에 의해 train된 비교 쌍들을 사용
             
-            ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%2011.png)
+            ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%2011.png)
             
 - **Combination**: **ORB**
     - FAST-9 detector (with orientation) + BRIEF-256 descriptor (with trained pairs)
@@ -178,7 +178,7 @@ draft: false
 - **Key idea**: patch의 움직임을 찾기
     - 밝기 불변에 대한 constraint (같은 patch일 경우)
         
-        ![Untitled](/assets/images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%2012.png)
+        ![Untitled](./images/Correspondence%20Problem%205ba2ee535ae6494f806dced7a655404d/Untitled%2012.png)
         
 - **Combination**: KLT tracker
     - Shi-Tomasi detector (a.k.a. GFTT) + Lukas-Kanade optical flow
