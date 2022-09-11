@@ -37,7 +37,7 @@ draft: false
         - Cons (–): Not working in wide baseline
 
 <details>
-<summary>Features</summary>
+<summary>Features (Click for more information)</summary>
 <div markdown="1">
 
 ### Harris Corner (1988)
@@ -104,7 +104,7 @@ draft: false
 </details>
 
 <details>
-<summary>Feature Descriptors and Matching</summary>
+<summary>Feature Descriptors and Matching (Click for more information)</summary>
 <div markdown="1">       
 
 ### SIFT (Scale-Invariant Feature Transform; 1999)
@@ -170,7 +170,7 @@ draft: false
 </details>
 
 <details>
-<summary>Feature Tracking</summary>
+<summary>Feature Tracking (Click for more information)</summary>
 <div markdown="1">       
 
 ### Lukas-Kanade Optical Flow
