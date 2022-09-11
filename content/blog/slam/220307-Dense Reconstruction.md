@@ -22,7 +22,7 @@ Different type of maps
 
 ---
 
-![Untitled](./images/220307/Untitled%201.png)
+![Untitled](./images/220307/Untitled 201.png)
 
 - monocular camera에서 depth 추정 방법
     1. feature 추출
