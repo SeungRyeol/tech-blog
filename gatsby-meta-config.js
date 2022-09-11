@@ -1,6 +1,6 @@
 module.exports = {
   title: `Dev Shin Tech Blog`,
-  description: `Blog posted about ...`,
+  description: `Blog posted about robotics and SLAM.`,
   author: `Miller Shin (SeungRyeol Shin)`,
   introduction: `Robotics Engineer | ROS | AMR(Autonomous Mobile Robot) | Agricultural Robot | SLAM & Navigation | Robotics Application`,
   siteUrl: `https://devshin.netlify.com`, // Your blog site url
@@ -22,7 +22,7 @@ module.exports = {
     countOfInitialPost: 10, // Config your initial count of post
   },
   sponsor: {
-    buyMeACoffeeId: 'jbee',
+    buyMeACoffeeId: 'devvshin',
   },
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
