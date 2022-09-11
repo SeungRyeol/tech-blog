@@ -9,7 +9,7 @@ draft: false
 
 ### Bundle Adjustment
 
-![](./images/Untitled.png)
+![](./images/test/Untitled.png)
 
 - **Unknown**
     - `Position of 3D points` and `each camera’s relative pose` ($6n+3m$ DoF)
