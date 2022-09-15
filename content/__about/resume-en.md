@@ -8,11 +8,12 @@ lang: 'en'
 
 <div align="center">
 
-Robotics Engineer | ROS | AMR(Autonomous Mobile Robot) | Agricultural Robot | SLAM & Navigation | Robotics Application
 
 </div>
 
-* Interest
+Robotics Engineer | ROS | AMR(Autonomous Mobile Robot) | Agricultural Robot | SLAM & Navigation | Robotics Application
+
+- Interest
   - Motion Planning and Control(Mobile Robot Navigation)
   - SLAM(especially localization)
   - Vision(Perception etc.)
