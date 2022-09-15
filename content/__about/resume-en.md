@@ -1,13 +1,18 @@
 ---
 title: 'about'
-date: 2019-1-27 16:21:13
+date: 2022-09-15 20:59:13
 lang: 'en'
 ---
 
-# Your name
+# SeungRyeol Shin (신승렬)
 
 <div align="center">
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+Robotics Engineer | ROS | AMR(Autonomous Mobile Robot) | Agricultural Robot | SLAM & Navigation | Robotics Application
 
 </div>
+
+* Interest
+  - Motion Planning and Control(Mobile Robot Navigation)
+  - SLAM(especially localization)
+  - Vision(Perception etc.)
