@@ -19,7 +19,7 @@ draft: false
 - Visual Tracking provides registration
 - Track without prior model of world
     
-    ![Untitled](./images/221126/Untitled.png)
+    ![Untitled](./images/221126/0.png)
     
 - Challenges:
     - Speed
@@ -35,7 +35,7 @@ draft: false
     - More robust
     - More accurate
         
-        ![Untitled](./images/221126/Untitled%201.png)
+        ![Untitled](./images/221126/1.png)
         
 
 ## Frame-by-frame SLAM
@@ -45,7 +45,7 @@ draft: false
 - Updating entire map every frame is expensive
 - Mandates `sparse map of high-quality features`
     
-    ![Untitled](./images/221126/Untitled%202.png)
+    ![Untitled](./images/221126/2.png)
     
 
 ## Our approach
@@ -56,21 +56,21 @@ draft: false
 - Don't update the map every frame: `Keyframes`
 - Split the tracking and mapping into two threads
     
-    ![Untitled](./images/221126/Untitled%203.png)
+    ![Untitled](./images/221126/3.png)
     
 
 - **Tracking Thread** vs **Mapping Thread**
     
-    ![Untitled](./images/221126/Untitled%204.png)
+    ![Untitled](./images/221126/4.png)
     
 
 ## Mapping Thread
 
 ---
 
-![Untitled](./images/221126/Untitled%205.png)
+![Untitled](./images/221126/5.png)
 
-![Asynchronous mapping thread](./images/221126/Untitled%206.png)
+![Asynchronous mapping thread](./images/221126/6.png)
 
 Asynchronous mapping thread
 
@@ -137,7 +137,7 @@ Asynchronous mapping thread
 
 ---
 
-![Untitled](./images/221126/Untitled%207.png)
+![Untitled](./images/221126/7.png)
 
 - Responsible estimation of camera pose and rendering augmented graphics
 - Must run at 30Hz
@@ -148,15 +148,15 @@ Asynchronous mapping thread
 
 1. Make mono and RGB version of image
     
-    ![Untitled](./images/221126/Untitled%208.png)
+    ![Untitled](./images/221126/8.png)
     
 2. Make four pyramid levels
     
-    ![Untitled](./images/221126/Untitled%209.png)
+    ![Untitled](./images/221126/9.png)
     
 3. Detect FAST corners
     
-    ![Untitled](./images/221126/Untitled%2010.png)
+    ![Untitled](./images/221126/10.png)
     
 
 ### Project Points
@@ -202,6 +202,6 @@ Asynchronous mapping thread
 
 ---
 
-![Untitled](./images/221126/Untitled%2011.png)
+![Untitled](./images/221126/11.png)
 
-![Untitled](./images/221126/Untitled%2012.png)
+![Untitled](./images/221126/12.png)
