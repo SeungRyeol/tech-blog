@@ -50,6 +50,7 @@ draft: false
             ⇒ bias의 variations이 클수록 위 파라미터를 높게 설정해야 함
             
             ⇒ $\sigma_{bg}$: `gyroscope_random_walk` in Kalibr
+
             ⇒ $\sigma_{ba}$: `accelerometer_random_walk` in Kalibr
             
 - **discrete-time**
