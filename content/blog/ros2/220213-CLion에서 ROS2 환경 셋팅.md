@@ -22,9 +22,11 @@ draft: false
 
     - Let's assume that only **selected packages** are built.
 
+        - `--packages-select` option
+
     ```bash
     cd ..
-    colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON --symlink-install --packages-select my_project
+    colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -G Ninja --symlink-install --packages-select my_project
     ```
 
 5. When build is finished, make sure that **robot_ws\build** contains a **compile_commands.json** file.
@@ -35,7 +37,7 @@ draft: false
 
 ## How to build a package
 
-### 1. Create a script for the 'colcon build' commands
+### 1. Create a script for the `colcon build` commands
 
 1. Navigate to the build logs directory. In our case, it's **~/robot_ws/log/latest_build my_project**. Open the **command.log** file from the latest build.
 
@@ -44,14 +46,20 @@ draft: false
     ```bash
     #!/bin/zsh
 
-    source /opt/ros/foxy/setup.zsh
+    source /opt/ros/humble/setup.zsh
     source ~/robot_ws/install/local_setup.zsh
-    CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake ~/robot_ws/build/my_project -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=~/robot_ws/install/my_project
-    CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build ~/robot_ws/build/my_project -- -j6 -l6
-    CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install ~/robot_ws/build/my_project
+    CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake ~/robot_ws/build/my_project -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=~/robot_ws/install/my_project
+    CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build ~/robot_ws/build/my_project -- -j23 -l23
+    CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install ~/robot_ws/build/my_project
     ```
 
-3. Save the file as a **.zsh** script. In our example, it is called **cmake_commands.zsh** and placed into **~/robot_ws/build/my_project**.
+3. Save the file as a `.zsh` script. In our example, it is called `cmake_commands.zsh` and placed into `~/robot_ws/build/my_project`.
+
+4. Make the script executable.
+
+    ```bash
+    chmod +x cmake_commands.zsh
+    ```
 
 ### 2. Create a custom build target
 
@@ -96,7 +104,7 @@ draft: false
             ```bash
             #!/bin/zsh
 
-            source /opt/ros/foxy/setup.zsh
+            source /opt/ros/humble/setup.zsh
             source ~/robot_ws/install/local_setup.zsh
             ~/robot_ws/build/manibot_bringup/joy_commander
             ```
